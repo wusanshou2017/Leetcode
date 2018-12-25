@@ -10,6 +10,10 @@ public:
         int n=needle.size();
         int ans=-1;
         int temp=0;
+        if(haystack.empty()&&needle.empty()) // edge solution
+        {
+            return 0;
+        }
         for(int j=0;j<m;++j)
         {
             if(haystack[j]==needle[0])
@@ -18,6 +22,8 @@ public:
                 temp=j;
                 break;
             }
+            if(j==m-1). // edge solution
+                return -1;
         }
         for(int i=0;i<n;++i)
         {
