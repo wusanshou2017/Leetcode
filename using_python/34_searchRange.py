@@ -21,7 +21,7 @@ class Solution():
             high=low
         return [low ,high]
 
-l=[2,2]
+l=[1,2,2,5,5,5,7,8,9]
 
 so =Solution()
-print (so.searchRange(l,2))
+print (so.searchRange(l,5))
