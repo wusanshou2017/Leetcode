@@ -1,8 +1,6 @@
 # [[1,3],[2,6],[8,10],[15,18]]
 # [[1,6],[8,10],[15,18]]
 
-
-
 class Solution():
     def merge(self, intervals: [[int]]) -> [[int]]:
         intervals.sort(key=lambda x: x[0])
@@ -12,6 +10,7 @@ class Solution():
             # 如果列表为空，或者当前区间与上一区间不重合，直接添加
             if not merged or merged[-1][1] < interval[0]:
                 merged.append(interval)
+
             else:
                 # 否则的话，我们就可以与上一区间进行合并
                 merged[-1][1] = max(merged[-1][1], interval[1])
@@ -19,5 +18,6 @@ class Solution():
         return merged
 
 
-so=Solution()
-print (so.merge([[1,3],[2,6],[8,10],[15,18]]))
+so = Solution()
+
+print(so.merge([[2, 7], [1, 10], [8, 10], [15, 18]]))
