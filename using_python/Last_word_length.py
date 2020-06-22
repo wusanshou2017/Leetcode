@@ -4,4 +4,6 @@ class Solution:
     	lst =s.split(" ")
     	res =len(lst[-1])
     	return res
+
+
     	
