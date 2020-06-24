@@ -8,7 +8,7 @@ class Solution:
             for i in range(coin, n + 1):
                 dp[i] += dp[i - coin]
 
-        return dp[n]
+        return dp[n] % mod
 
 
 so = Solution()
