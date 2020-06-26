@@ -8,3 +8,6 @@ class Solution:
 
     	return dp[amount] if dp[amount]!= float("inf") else -1
 
+so =Solution()
+
+print (so.coinChange())
