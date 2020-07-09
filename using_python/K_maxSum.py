@@ -14,11 +14,10 @@ class Solution:
         n = len(arr)
         s, d = [0] * (n + 1), [0] * n
         for i in range(n):
-            s[i + 1] = s[i] + arr[i]
-            d[i] = max(d[i - 1] + arr[i], 0)
+            s[i + 1] = s[i] + arr[i]  # 前缀和
+            d[i] = max(d[i - 1] + arr[i], 0)  # 最大连续和
 
-        print(s)
-        print(d)
+
         if k == 1:
             return max(d)
 
@@ -27,7 +26,5 @@ class Solution:
 
 so = Solution()
 
-print(so.test([-1, 1, 2], 5))
 
-
-print("lll")
+print(so.test([1, -2, 1], 5))
