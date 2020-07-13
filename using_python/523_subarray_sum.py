@@ -1,10 +1,8 @@
 #  input :[23,2,4,6,7], k = 6
 #  output : True
 
-
-
 class Solution:
-    def checkSubarraySum(self, nums: [int], k: int):
+	def checkSubarraySum(self, nums: [int], k: int):
 		n =len(nums)
 		if n < 2:
 			return False
@@ -12,22 +10,42 @@ class Solution:
 		dp[0] = nums[0]
 		for i in range(1,len(nums)):
 		    dp[i] = dp[i-1] + nums[i] #获取nums的0-i的和，包括i
-
 		print ("dp...:",dp)
+
 		for i in range(len(nums)-1):
-		    for j in range(i+1,len(nums)):
-		        sums = dp[j] - dp[i] + nums[i] #得到sums[i:j]的大小，这里包括j
-		        if k == 0:
-		            if sums == 0:
-		                return True
-		        else:
-		            if sums % k == 0:
-		                return True
+			for j in range(i+1,len(nums)):
+				sums = dp[j] - dp[i] + nums[i] #得到sums[i:j]的大小，这里包括j
+				if k == 0:
+					if sums == 0:
+						return True
+				else:
+					if sums % k == 0:
+						return True
 		return False
+
+	def test(self,nums:[int],k:int):
+		s = 0
+		lookup = {0:-1}
+		for i, num in enumerate(nums):
+			s += num
+			print (s)
+			if k != 0:
+				s %= k
+			if s in lookup:
+				if i > lookup[s] + 1:
+					print (lookup)
+					return True
+			else:
+				lookup[s] = i
+
+		return False
+
+
+
 
 
 test =[23,2,6,4,7]
 k=8
 so=Solution()
-print (so.checkSubarraySum(test,k))
-    			
+
+print (so.test(test,8))		
