@@ -1,10 +1,10 @@
 class Solution:
     def first_get(self, maxChoosableInteger: int, desiredTotal: int) -> bool:
         n = maxChoosableInteger
-        dp = [ False  for _ in range (n)]
-        print (dp)
-        return 
+        dp = [False for _ in range(n)]
 
-so =Solution()
+        print(dp)
+        return
 
-print (so.first_get(10,100))
+
+so = Solution()
