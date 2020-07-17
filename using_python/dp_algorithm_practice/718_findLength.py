@@ -7,22 +7,17 @@ B = [3, 2, 1, 4, 7]
 
 
 class Solution:
-    def test(self, A: [int], B: [int]) -> int:
+    def my_findLength(self, A: [int], B: [int]) -> int:
         n1 = len(A)
         n2 = len(B)
         dp = [[0] * (n2 + 1) for _ in range(n1 + 1)]
-        dp[0][0] = 0
-        cand = []
+        pre = 0
         for i in range(1, n1 + 1):
             for j in range(1, n2 + 1):
                 if A[i - 1] == B[j - 1]:
                     dp[i][j] = dp[i - 1][j - 1] + 1
-                    cand.append(dp[i][j])
-
-        if not cand:
-            return 0
-        else:
-            return max(cand)
+                    pre = max(dp[i][j], pre)
+        return pre
 
     def findLength(self, A: [int], B: [int]) -> int:
         n, m = len(A), len(B)
@@ -36,5 +31,5 @@ class Solution:
 
 
 so = Solution()
-print(so.findLength([0, 1, 1, 1, 1],
-                    [1, 0, 1, 0, 1]))
+print(so.test([0, 1, 1, 1, 1],
+              [1, 0, 1, 0, 1]))
