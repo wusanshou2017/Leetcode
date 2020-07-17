@@ -19,8 +19,22 @@ class Solution:
                     dp[i][j] = dp[i - 1][j - 1] + 1
                     cand.append(dp[i][j])
 
-        return max(cand)
+        if not cand:
+            return 0
+        else:
+            return max(cand)
+
+    def findLength(self, A: [int], B: [int]) -> int:
+        n, m = len(A), len(B)
+        dp = [[0] * (m + 1) for _ in range(n + 1)]
+        ans = 0
+        for i in range(n - 1, -1, -1):
+            for j in range(m - 1, -1, -1):
+                dp[i][j] = dp[i + 1][j + 1] + 1 if A[i] == B[j] else 0
+                ans = max(ans, dp[i][j])
+        return ans
 
 
 so = Solution()
-print(so.test(A, B))
+print(so.findLength([0, 1, 1, 1, 1],
+                    [1, 0, 1, 0, 1]))
