@@ -12,17 +12,12 @@ class Solution:
     	return dp[-1][-1] 
 
     def test(self,m:int,n:int)->int :
-    	pre_up=1
-    	pre_left=1 
-    	cur=0
+    	pre =[1]*n
     	for i in range (1,m):
-    		pre_up=cur
     		for j in range (1,n):
-    			cur = pre_up+pre_left
-    			pre_left=cur
-    		
-
-    	return cur 
+    			pre[j]+=pre[j-1]
+    			cur = pre[-1]
+    	return cur
 
 so =Solution()
 print (so.test(3,2))
