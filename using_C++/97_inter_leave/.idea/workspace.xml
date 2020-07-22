@@ -11,9 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a51a2f7-535e-46c1-8c0f-a1360baf5f1e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="9a51a2f7-535e-46c1-8c0f-a1360baf5f1e" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -127,12 +125,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595323473587</updated>
-      <workItem from="1595323478419" duration="6125000" />
+      <workItem from="1595323478419" duration="6317000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6125000" />
+    <option name="totallyTimeSpent" value="6317000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -149,7 +147,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32922733" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32922733" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39977604" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
