@@ -22,6 +22,8 @@ class Solution:
         temp = max(length)
         res = sum([counter[i] for i in range(n) if length[i] == temp])
 
+        print(length)
+        print(counter)
         return res
 
 
