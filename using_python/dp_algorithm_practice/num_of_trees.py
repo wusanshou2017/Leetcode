@@ -11,7 +11,3 @@ class Solution:
 
 so = Solution()
 print(so.numTrees(4))
-
-print(60000 / 60)
-
-print(1000 % 60)
