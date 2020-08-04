@@ -5,7 +5,7 @@ class Solution:
         :rtype: List[List[int]]
         """
         def backtrack(first=0):
-            # 所有数都填完了
+            # all nums is filled
             if first == n:
                 res.append(nums[:])
             for i in range(first, n):
@@ -22,6 +22,6 @@ class Solution:
         return res
 
 
-test = [1, 2]
+test = [1, 2, 3]
 so = Solution()
 print(so.permute(test))
