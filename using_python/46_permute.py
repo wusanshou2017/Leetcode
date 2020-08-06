@@ -20,8 +20,3 @@ class Solution:
         res = []
         backtrack()
         return res
-
-
-test = [1, 2, 3]
-so = Solution()
-print(so.permute(test))
