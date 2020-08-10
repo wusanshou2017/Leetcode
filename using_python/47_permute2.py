@@ -14,10 +14,6 @@ class Solution:
                     dfs(nums, size, depth + 1, path, used, res)
                     used[i] = False
                     path.pop()
-
-                else:
-                    continue
-
         size = len(nums)
         if size == 0:
             return []
