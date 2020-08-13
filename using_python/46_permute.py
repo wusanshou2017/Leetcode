@@ -54,3 +54,8 @@ class Solution:
 so = Solution()
 
 print(so.permute_dfs([1, 2, 3]))
+
+
+s = "123"
+
+print(s)
