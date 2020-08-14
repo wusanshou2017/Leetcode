@@ -12,7 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e662500a-cdd4-48be-9e0b-95119b2ba879" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../using_python/46_permute.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../using_python/46_permute.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../47_permute2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../47_permute2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../47_permute2/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../47_permute2/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="33" column="2" lean-forward="true" selection-start-line="1" selection-end-line="33" selection-end-column="2" />
+            <state relative-caret-position="394">
+              <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -57,8 +59,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-18" />
-    <option name="y" value="109" />
+    <option name="x" value="290" />
+    <option name="y" value="134" />
     <option name="width" value="1400" />
     <option name="height" value="849" />
   </component>
@@ -108,15 +110,15 @@
       <option name="presentableId" value="Default" />
       <updated>1597058333621</updated>
       <workItem from="1597058336424" duration="1726000" />
-      <workItem from="1597289680389" duration="2409000" />
+      <workItem from="1597289680389" duration="3129000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4135000" />
+    <option name="totallyTimeSpent" value="4855000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-18" y="109" width="1400" height="849" extended-state="1" />
+    <frame x="290" y="134" width="1400" height="849" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25336322" />
@@ -150,8 +152,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="33" column="2" lean-forward="true" selection-start-line="1" selection-end-line="33" selection-end-column="2" />
+        <state relative-caret-position="394">
+          <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

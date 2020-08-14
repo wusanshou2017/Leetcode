@@ -16,17 +16,9 @@ public:
         return res;
     }
     void dfs (vector<int> nums,int size,int depth ,vector<int > &path,vector<bool > &used ,vector<vector<int >> &res){
-        if (depth== size){
-            res.push_back(path);
-            return ;
-        }
         for (int i=0;i<size;i++){
-            if (i>0 and nums[i]==nums[i-1]){
-                used[i] =true ;
-                continue;
-            }
-
-            if (!used[i]){
+            if (i>0 and nums[i] == nums[i-1] and not used[i-1]) continue;
+            if (!used[i] ){
                 used[i] =true;
                 path.push_back(nums[i]);
                 dfs(nums,size,depth+1,path,used,res);
