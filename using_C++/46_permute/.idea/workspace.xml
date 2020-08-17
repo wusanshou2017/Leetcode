@@ -12,15 +12,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e662500a-cdd4-48be-9e0b-95119b2ba879" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../48_rotate/.idea/48_rotate.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../48_rotate/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../48_rotate/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../48_rotate/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../48_rotate/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../canJump/.idea/canJump.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../canJump/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../canJump/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../canJump/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../canJump/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../47_permute2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../47_permute2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../using_python/48_rotate_img.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../using_python/48_rotate_img.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../using_python/49_groupAnagrams.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../using_python/49_groupAnagrams.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../48_rotate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../48_rotate/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
