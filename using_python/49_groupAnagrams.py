@@ -37,10 +37,10 @@ class Solution:
         dict = {}
         for item in strs:
             key = tuple(sorted(item))
-            dict[key] = dict.get(key, []).append[item]
+            dict[key] = dict.get(key, []) + [item]
         return list(dict.values())
 
 
 test = ["eat", "eat", "tan", "eat", "aaa", "ate", "nat", "bat"]
 so = Solution()
-print(so.groupAnagrams2(test))
+print(so.groupAnagrams(test))

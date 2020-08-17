@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/Mygithub/Leetcode/using_C++/48_rotate/main.cpp
+iostream
+-
+string
+-
+vector
+-
+algorithm
+-
+

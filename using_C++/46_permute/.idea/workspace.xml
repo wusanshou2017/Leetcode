@@ -12,7 +12,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e662500a-cdd4-48be-9e0b-95119b2ba879" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../48_rotate/.idea/48_rotate.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../48_rotate/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../48_rotate/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../48_rotate/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../48_rotate/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../47_permute2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../47_permute2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../using_python/48_rotate_img.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../using_python/48_rotate_img.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../using_python/49_groupAnagrams.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../using_python/49_groupAnagrams.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,8 +43,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+            <state relative-caret-position="92">
+              <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -56,7 +64,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="290" />
     <option name="y" value="134" />
     <option name="width" value="1400" />
@@ -68,8 +76,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -109,17 +117,18 @@
       <updated>1597058333621</updated>
       <workItem from="1597058336424" duration="1726000" />
       <workItem from="1597289680389" duration="3129000" />
+      <workItem from="1597655070859" duration="1396000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4855000" />
+    <option name="totallyTimeSpent" value="6251000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="290" y="134" width="1400" height="849" extended-state="1" />
+    <frame x="290" y="134" width="1400" height="849" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25336322" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25710014" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -150,8 +159,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+        <state relative-caret-position="92">
+          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
