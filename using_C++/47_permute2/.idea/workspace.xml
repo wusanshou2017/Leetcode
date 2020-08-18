@@ -12,14 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="542afe96-01c8-431e-9350-414e683659cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../canJump/.idea/canJump.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../canJump/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../canJump/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../canJump/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../canJump/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../46_permute/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../46_permute/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../48_rotate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../48_rotate/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../canJump/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../canJump/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../using_python/55_canjump.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../using_python/55_canjump.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -77,7 +72,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="290" />
     <option name="y" value="134" />
     <option name="width" value="1400" />
@@ -137,7 +132,7 @@
     <option name="totallyTimeSpent" value="6384000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4994401" visible="true" weight="0.18036287" />

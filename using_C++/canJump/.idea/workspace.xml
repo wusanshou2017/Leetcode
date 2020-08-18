@@ -12,14 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75643f11-5938-4152-b2f2-02b27ad14354" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/canJump.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../46_permute/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../46_permute/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../47_permute2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../47_permute2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../48_rotate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../48_rotate/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../using_python/55_canjump.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../using_python/55_canjump.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,7 +55,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="290" />
     <option name="y" value="134" />
     <option name="width" value="1400" />
@@ -111,19 +106,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1597658139346</updated>
-      <workItem from="1597658141070" duration="623000" />
+      <workItem from="1597658141070" duration="1221000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="623000" />
+    <option name="totallyTimeSpent" value="1221000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="290" y="134" width="1400" height="849" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2497332" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3497758" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CMake" />
       <window_info anchor="bottom" id="Database Changes" />
