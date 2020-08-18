@@ -24,7 +24,7 @@ class Solution:
             temp = pre_index
             pre_index = [pre_index[0] + directions[direct]
                          [0], pre_index[1] + directions[direct][1]]
-            if pre_index[0] < n and pre_index[0] >= 0 and pre_index[1] < n and pre_index[1] >= 0 and pre_index not in visted:
+            if pre_index not in visted and pre_index[0] < n and pre_index[0] >= 0 and pre_index[1] < n and pre_index[1] >= 0:
                 matrix[pre_index[0]][pre_index[1]] = i
                 visted.append(pre_index)
 
