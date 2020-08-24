@@ -52,7 +52,7 @@ class Solution:
 
         res = []
 
-        while index < n and intervals[index][1] > start_range:
+        while index < n and intervals[index][0] < start_range:
 
             res.append(intervals[index])
             index += 1
@@ -63,17 +63,28 @@ class Solution:
         else:
             res[-1][-1] = max(res[-1][-1], end_range)
 
+
         while index < n:
 
             start, end = intervals[index]
+            
 
-            index += 1
-
-            if res[-1][-1] > start:
+            if res[-1][-1] >= start:
 
                 res[-1][-1] = max(res[-1][-1], end)
 
             else:
                 res.append(intervals[index])
 
+            index += 1
+            
         return res
+
+intervals = [[1,3],[6,9]]
+
+newInterval = [2,5]
+
+so =Solution()
+
+print (so.my_insert(intervals,newInterval))
+
