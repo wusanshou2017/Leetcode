@@ -4,15 +4,18 @@ using namespace std;
 class Solution {
 public:
     int climbStairs(int n) {
-        vector<int > dp (0,n);
+        
         if (n==1) return 1;
         if (n==2) return 2;
-        dp[0]=1;
-        dp[1]=2;
+        int pre1 =1;
+        int pre2 =2;
+        int ans =1;
         for(int i =2;i<n;i++){
-            dp[i]=dp[i-1]+dp[i-2];
+            ans =pre1+pre2;
+            pre1 =pre2;
+            per2 = ans;
         }
-        return dp[n];
+        return ans;
     }
 };
 
