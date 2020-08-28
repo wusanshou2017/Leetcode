@@ -11,7 +11,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="e662500a-cdd4-48be-9e0b-95119b2ba879" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="e662500a-cdd4-48be-9e0b-95119b2ba879" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../using_python/46_permute.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../using_python/46_permute.py" afterDir="false" />
+    </list>
+>>>>>>> Stashed changes
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,8 +39,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="216">
               <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+=======
+            <state relative-caret-position="380">
+              <caret line="33" column="2" lean-forward="true" selection-start-line="1" selection-end-line="33" selection-end-column="2" />
+>>>>>>> Stashed changes
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -54,9 +65,15 @@
       </list>
     </option>
   </component>
+<<<<<<< Updated upstream
   <component name="ProjectFrameBounds">
     <option name="x" value="290" />
     <option name="y" value="134" />
+=======
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-18" />
+    <option name="y" value="109" />
+>>>>>>> Stashed changes
     <option name="width" value="1400" />
     <option name="height" value="849" />
   </component>
@@ -106,17 +123,28 @@
       <option name="presentableId" value="Default" />
       <updated>1597058333621</updated>
       <workItem from="1597058336424" duration="1726000" />
+<<<<<<< Updated upstream
       <workItem from="1597289680389" duration="3129000" />
       <workItem from="1597655070859" duration="1396000" />
       <workItem from="1598516451260" duration="57000" />
+=======
+      <workItem from="1597289680389" duration="2409000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="6308000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="290" y="134" width="1400" height="849" extended-state="0" />
+=======
+    <option name="totallyTimeSpent" value="4135000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-18" y="109" width="1400" height="849" extended-state="1" />
+>>>>>>> Stashed changes
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26083708" />
@@ -150,8 +178,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="216">
           <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+=======
+        <state relative-caret-position="380">
+          <caret line="33" column="2" lean-forward="true" selection-start-line="1" selection-end-line="33" selection-end-column="2" />
+>>>>>>> Stashed changes
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
