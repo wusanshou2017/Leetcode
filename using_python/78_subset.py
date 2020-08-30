@@ -1,4 +1,6 @@
 from typing import List
+import tensorflow as tf
+assert(tf.__version__.startswith("2.")) 
 class Solution:
     def subsets(self, nums: List[int]) -> List[List[int]]:
         def backtrack(first = 0, curr = []):
@@ -18,3 +20,5 @@ class Solution:
         for k in range(n + 1):
             backtrack()
         return output
+
+
