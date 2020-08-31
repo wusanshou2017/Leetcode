@@ -5,10 +5,32 @@ from typing import List
 
 class Solution:
     def search(self, nums: List[int], target: int) -> bool:
-        n = len(nums)
+        if not nums:
+        	return False
         l = 0
-        r = n - 1
-        while l < r:
-            mid = l + (r - l) // 2
-            # left
-            if nums[0] < nums[mid]:
+        r = len(nums)-1
+
+        while l<=r:
+        	mid =(l+r)//2
+        	if nums[mid] == target:
+        		return True
+
+        	## left range
+        	if nums[mid]>nums[l]:
+        		if nums[l]<=target<=nums[mid]:
+        			r =mid-1
+
+        		else:
+        			l =mid +1
+
+        	elif nums[mid] == nums[left]:
+        		left +=1
+
+        	### right range
+        	elif nums[mid]<nums[left]:
+        		if nums[mid]<= target <= nums[r]:
+        			l = mid +1
+        		else:
+        			r =mid -1
+
+        return False 
