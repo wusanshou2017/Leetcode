@@ -23,11 +23,11 @@ class Solution:
         		else:
         			l =mid +1
 
-        	elif nums[mid] == nums[left]:
-        		left +=1
+        	elif nums[mid] == nums[l]:
+        		l +=1
 
         	### right range
-        	elif nums[mid]<nums[left]:
+        	elif nums[mid]<nums[l]:
         		if nums[mid]<= target <= nums[r]:
         			l = mid +1
         		else:
