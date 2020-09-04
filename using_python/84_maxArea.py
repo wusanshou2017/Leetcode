@@ -40,7 +40,7 @@ class Solution:
         size += 2
         for i in range(1, size):
             while heights[i] < heights[stack[-1]]:
-                cur_height = heights[stack[-1]]
+                cur_height = heights[stack.pop()]
                 cur_width = i - stack[-1] - 1
                 res = max(res, cur_height * cur_width)
             stack.append(i)
@@ -48,4 +48,4 @@ class Solution:
 
 
 so = Solution()
-print(so.cal_maxArea([2, 1, 5, 1, 2, 3]))
+print(so.force([2, 4, 5, 6, 2, 1]))
