@@ -8,14 +8,14 @@ import (
 func subsetsWithDup(nums []int) [][]int {
     n :=len(nums)
     sort.Ints(nums)
-    var path []int
-    var res [][]int
+    path = make([]int,n)
+    res =make([][]int,0)
 
-    dfs(0,n,nums,path,&res)
+    dfs(0,n,nums,&path,&res)
     return res 
 }
 
-func dfs (start int, end int, nums []int, path []int, res *[][]int ) {
+func dfs (start int, end int, nums []int, path *[]int, res *[][]int ) {
         
         for i:=start;i<end;i+=1{
             if (i>start && nums[i]==nums[i-1]){
@@ -23,21 +23,8 @@ func dfs (start int, end int, nums []int, path []int, res *[][]int ) {
             }
             path := append(path, nums[i])
             res := append(*res,path)
-            dfs(i+1,end,nums,path,res)
+            path = path[:len(path)-1]
+            dfs(i+1,end,nums,&path,&res)
         }
 }
 
-
-func demo(nums []int) []int{
-
-    sorted(nums)
-
-    return nums
-
-}
-
-func sorted(nums [] int){
-
-    
-
-}
