@@ -8,6 +8,7 @@ class Solution:
         findout = defaultdict(int)
         for i in t:
             findout[i] += 1
+
         min_len, res = float("inf"), ""
         n, counter = len(s), len(t)
 
@@ -27,5 +28,3 @@ class Solution:
                 left += 1
 
         return res
-
-    def slideWindow(self, s: str, t: str) -> str:
