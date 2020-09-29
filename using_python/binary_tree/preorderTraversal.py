@@ -23,3 +23,18 @@ class Solution:
                     stack.append(root.left)
 
         return output
+
+    def preorderTraversal3(self, root):
+
+        if root is None:
+            return []
+
+        stack, output = [root,], []
+        while stack:
+            root = stack.pop()
+            if root is not None:
+                if root.right is not None:
+                    stack.append(root.right)
+
+                if root.left is not None:
+                    stack.append(root.left)
