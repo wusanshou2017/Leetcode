@@ -1,5 +1,4 @@
 from typing import List 
-
 class Solution:
 	def exist(self, board: List[List[str]], word: str) -> bool:
 		direct_choice = [(0,1),(0,-1),(1,0),(-1,0)]
