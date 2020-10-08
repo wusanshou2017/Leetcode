@@ -18,18 +18,14 @@ class Solution:
         return self.Traversal(root.left) + [root.val] + self.Traversal(root.right)
 
     def Traversal2(self, root: TreeNode) -> List[int]:
-
-        if root is None:
-            return []
-
-        stack, output = [root.left, ], []
-        while stack:
-            root = stack.pop()
-            if root is not None:
-                output.append(root.val)
-                if root.right is not None:
-                    stack.append(root.right)
-
-                if root.left is not None:
-                    stack.append(root.left)
-        return output
+        res =[]
+        stack =[]
+        cur =root 
+        while stack or cur:
+            while  cur:
+                stack.append(cur)
+                cur = cur.left
+            cur = stack.pop()
+            res.append (cur.val)
+            cur = cur.right
+        return res
