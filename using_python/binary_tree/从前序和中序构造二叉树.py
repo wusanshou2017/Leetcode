@@ -33,3 +33,15 @@ class Solution:
     	idx = inorder.index(preorder[0])
     	root.left = self.buildTree2(preorder[1:1+idx],inorder[:idx])
     	root.right = self.buildTree2(preorder[1+idx:],inorder[idx+1:])
+    	return root
+
+
+
+
+
+
+
+
+
+
+
