@@ -16,3 +16,5 @@ class Solution:
             right_height = self.maxDepth(root.right)
 
         return max(left_height, right_height) + 1
+
+    
