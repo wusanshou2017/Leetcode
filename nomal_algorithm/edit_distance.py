@@ -24,6 +24,3 @@ so = Solution()
 print(so.editDistance("abbce", "bbbc"))
 
 
-i = 3
-j = None
-print(j or i)

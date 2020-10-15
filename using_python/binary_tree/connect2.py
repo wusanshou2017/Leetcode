@@ -2,74 +2,26 @@
 # [1,2,3,4,5,null,6,7,null,null,null,null,8]
 
 class Solution():
-    def connect(self, root: 'Node') -> 'Node':
-        if not root:
-            return
+    def connect2(self, root: 'Node') -> 'Node':
+        dummy_left_node = Node()
+        pre = dummy_left_node
+        current_node = root
 
-        if root.left and root.right:
-            root.left.next = root.right
-            #  some flaws if root.right is None
-            if root.next:
-                if root.next.left and root.next.right:
-                    root.right.next = root.next.left
-                else:
-                    if root.next.left:
-                        root.right.next = root.next.left
-                    elif root.next.right:
-                        root.right.next = root.next.right
-                    else:
-                        root.right.next = None
+        while current_node:
+            if current_node.left:
+                pre.next = current_node.left
+                pre = pre.next
+            if current_node.right:
+                pre.next = current_node.right
+                pre = pre.next
 
-        else:
-            if root.left:
-                if root.next:
-                    if root.next.left and root.next.right:
-                        root.left.next = root.next.left
-                    else:
-                        if root.next.left:
-                            root.left.next = root.next.left
-                        elif root.next.right:
-                            root.left.next = root.next.right
-                        else:
-                            root.left.next = None
-            elif root.right:
-                if root.next:
-                    if root.next.left and root.next.right:
-                        root.right.next = root.next.left
-                    else:
-                        if root.next.left:
-                            root.right.next = root.next.left
-                        elif root.next.right:
-                            root.right.next = root.next.right
-                        else:
-                            root.right.next = None
-            else:
-                pass
+            current_node = current_node.next
 
-        self.connect(root.left)
-        self.connect(root.right)
+            if not current_node:
+                current_node = dummy_left_node.next
+                dummy_left_node.next = None
+                pre = dummy_left_node
         return root
-
-        def connect2(self, root: 'Node') -> 'Node':
-            dummy_left_node = Node()
-            pre = dummy_left_node
-            current_node = root
-
-            while current_node:
-                if current_node.left:
-                    pre.next = current_node.left
-                    pre = pre.next
-                if current_node.right:
-                    pre.next = current_node.right
-                    pre = pre.next
-
-                current_node = current_node.next
-
-                if not current_node:
-                    current_node = dummy_left_node.next
-                    dummy_left_node.next = None
-                    pre = dummy_left_node
-            return root
 
 
 class Solution {
@@ -96,3 +48,50 @@ class Solution {
             start = nextStart; }
         return root; }
 };
+
+    def connect3(self , root:'Node')->'Node':
+        if not root:
+            return None
+        start = root
+        while start:
+            last = None
+            q = None
+            for 
+
+    def helper(self,last,p,q):
+        if last:
+            last.next = p
+        if not q:
+            q =p
+        last =p
+"""
+# Definition for a Node.
+class Node:
+    def __init__(self, val: int = 0, left: 'Node' = None, right: 'Node' = None, next: 'Node' = None):
+        self.val = val
+        self.left = left
+        self.right = right
+        self.next = next
+"""
+
+class Solution:
+    def connect(self, root: 'Node') -> 'Node':
+        if not root:
+            return 
+        dummy = Node()
+        pre = dummy
+        first = root 
+        while first:
+            if first.left:
+                pre.next = first.left
+                pre = pre.next
+            if first.right:
+                pre.next = first.right
+                pre = pre.next
+
+            first = first.next
+            if not first:
+                first= dummy.next
+                dummy = Node()
+                pre = dummy
+        return root 
