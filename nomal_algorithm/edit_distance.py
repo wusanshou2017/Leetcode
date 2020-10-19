@@ -21,6 +21,6 @@ class Solution():
 
 so = Solution()
 
-print(so.editDistance("abbce", "bbbc"))
+print(so.editDistance("a", ""))
 
 
