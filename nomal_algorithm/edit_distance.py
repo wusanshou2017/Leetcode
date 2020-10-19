@@ -16,7 +16,7 @@ class Solution():
                 dp[i][j] = min(dp[i - 1][j - 1] + d, dp[i - 1]
                                [j] + 1, dp[i][j - 1] + 1)
 
-        return dp[m - 1][n - 1]
+        return dp[m][n]
 
 
 so = Solution()
