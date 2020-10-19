@@ -1,4 +1,5 @@
 from typing import List
+import random
 # [2,2,2,0,1]
 class Solution:
 	def findMin (self,nums:List[int])-> int:
@@ -8,13 +9,10 @@ class Solution:
 			mid =(l+r)//2
 			if nums[mid]<nums[r]:
 				r=mid
-
 			elif nums[mid]>nums[r]:
 				l=mid+1
 			else:
 				r-=1
 		return nums[l]
 
-so =Solution()
-test = [0,1,1]
-print(so.findMin(test))
+
