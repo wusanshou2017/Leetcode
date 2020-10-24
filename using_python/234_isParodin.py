@@ -21,7 +21,8 @@ class Solution:
         while dummy:
             dummy = dummy.next
             n+=1
-        print (n) 
+        l1 =[]
+        l2 =[]
         # 对n 的值进行校验
         if n%2==0:
             mid = n//2
@@ -31,13 +32,14 @@ class Solution:
                 dummy2 =dummy2.next
                 mid -=1
             
-            while dummy2.next:
-                if dummy1 ==dummy2:
-                    dummy1= dummy1.next
-                    dummy2 = dummy2.next
-                else:
-                    return False
-            return True
+            while dummy2:
+                l1.append(dummy1)
+                l2.append(dummy2)
+                dummy1=dummy1.next
+                dummy2 = dummy2.next
+                
+                
+           
 
         else:
             mid = n//2
@@ -47,13 +49,14 @@ class Solution:
                 dummy2 = dummy2.next
                 mid -=1
 
-            while dummy2.next:
-                if dummy1 == dummy2:
-                    dummy1 =dummy1.next
-                    dummy2 = dummy2.next
-                else:
-                    return False
-            return True
+            while dummy2:
+                l1.append(dummy1)
+                l2.append(dummy2)
+                dummy1=dummy1.next
+                dummy2 = dummy2.next
+
+        return l1[::-1]==l2[:]
+            
 
 if __name__ == '__main__':
     head =  ListNode(0)
