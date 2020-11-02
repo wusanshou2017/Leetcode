@@ -7,10 +7,10 @@ class Solution:
         slow_ptr, fast_ptr = 0, 1
         res = 0
         while slow_ptr < n and fast_ptr < n:
+            print (s[slow_ptr:fast_ptr])
             if s[fast_ptr] in s[slow_ptr:fast_ptr]:
                 res = max(res, fast_ptr - slow_ptr)
                 slow_ptr += 1
-                fast_ptr += 1
             else:
                 res = max(res, fast_ptr - slow_ptr)
                 fast_ptr += 1
@@ -20,4 +20,4 @@ class Solution:
 
 
 so = Solution()
-print(so.lengthOfLongestSubstring("pwwkew"))
+print(so.lengthOfLongestSubstring("bbbbb"))
