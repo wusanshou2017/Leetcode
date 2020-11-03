@@ -66,4 +66,4 @@ class Solution:
 
 
 so = Solution()
-print(len(so.solveNQueens(5)))
+assert(so.solveNQueens(5) == so.solveNQueens2(5))
