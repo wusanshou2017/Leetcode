@@ -39,38 +39,31 @@ class Solution:
 
     def solveNQueens2(self, n: int) -> List[List[str]]:
 
-
-        def backTrack(row,path):
-            if row ==n:
-                temp = [ "".join(item) for item in path]
+        def backTrack(row, path):
+            if row == n:
+                temp = ["".join(item) for item in path]
                 res.append(temp[:])
 
             for i in range(n):
-                if i in columns or row - i in diag1  or row + i in diag2:
+                if i in columns or row - i in diag1 or row + i in diag2:
                     continue
-                path[row][i]="Q"
+                path[row][i] = "Q"
                 columns.add(i)
-                diag1.add(row-i)
-                diag2.add(row+i)
-                backTrack(row+1,path)
-                path[row][i]="."
+                diag1.add(row - i)
+                diag2.add(row + i)
+                backTrack(row + 1, path)
+                path[row][i] = "."
                 columns.remove(i)
-                diag1.remove(row-i)
-                diag2.remove(row+i)
-        res=[]
-        columns=set()
-        diag1=set()
-        diag2=set()
-        path = [["."]*n for _ in range(n)]
-        backTrack(0,path)
+                diag1.remove(row - i)
+                diag2.remove(row + i)
+        res = []
+        columns = set()
+        diag1 = set()
+        diag2 = set()
+        path = [["."] * n for _ in range(n)]
+        backTrack(0, path)
         return res
 
 
-so =Solution()
-print(so.solveNQueens2(4))
-
-
-
-
-
-
+so = Solution()
+print(len(so.solveNQueens(5)))
