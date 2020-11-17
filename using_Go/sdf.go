@@ -1,3 +1,20 @@
+package main
+import
+{
+"fmt"
+"math"
+}
+
+func main() {
+}
+
+type TreeNode struct{
+
+
+
+}
+
+
 func diameterOfBinaryTree(root *TreeNode) int {
     m:=0
     max:=&m  //现有的最长直径
