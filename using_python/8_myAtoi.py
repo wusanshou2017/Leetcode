@@ -59,9 +59,9 @@ class Solution():
                 ans = ans * 10 + int(c)
 
             else:
-                return sign * ans
-        return sign * ans
+                return sign * ans if INT_MIN < sign * ans < INT_MAX else 0
+        return sign * ans if INT_MIN < sign * ans < INT_MAX else 0
 
 
 so = Solution()
-print(so.myAtoi2("   234w"))
+print(so.myAtoi2("   +456464 loss"))
