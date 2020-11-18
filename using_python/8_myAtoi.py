@@ -44,7 +44,7 @@ class Solution():
         flag_start = False
         sign = 1
         ans = 0
-        for c in str:
+        for c in s:
             if c == " " and not flag_start:
                 continue
             elif c == "+" and not flag_start:
@@ -59,8 +59,17 @@ class Solution():
                 ans = ans * 10 + int(c)
 
             else:
-                return sign * ans if INT_MIN < sign * ans < INT_MAX else 0
-        return sign * ans if INT_MIN < sign * ans < INT_MAX else 0
+                if INT_MIN <=sign * ans <=INT_MAX:
+                    return sign * ans
+                elif sign * ans<INT_MIN:
+                    return INT_MIN
+                else: return INT_MAX
+        
+        if INT_MIN <=sign * ans <=INT_MAX:
+                    return sign * ans
+        elif sign * ans<INT_MIN:
+                    return INT_MIN
+        else: return INT_MAX
 
 
 so = Solution()
