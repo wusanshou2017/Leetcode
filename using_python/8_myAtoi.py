@@ -40,7 +40,7 @@ class Solution():
             automaton.get(c)
         return automaton.sign * automaton.ans
 
-    def myAtoi2(self, str: str) -> int:
+    def myAtoi2(self, s: str) -> int:
         flag_start = False
         sign = 1
         ans = 0
