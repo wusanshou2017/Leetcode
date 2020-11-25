@@ -1,36 +1,25 @@
-package main
-
-import (   
-    "fmt" 
-)
-
-func match(s string, p string) bool {
-
-    m = len(s)
-    n = len(p)
-    var matrix  [m][n] bool
-    for i:=0; i<m+1;i++{
-        for j:=0; j<n+1;j++{
-            matrix[i][j]=false
-        }
+func isMatch(s string, p string) bool {
+    m := len(s)
+    n := len(p)
+    matrix := make([][]bool, m + 1)
+    for i := 0; i < len(matrix); i++ {
+        matrix[i] = make([]bool, n + 1)
     }
+
     matrix[0][0] =true
-    for i:=0; i<m+1;i++{
-        for j:=0; j<n+1;j++{
-            if (p[i-1]=="*"){
-                matrix[i][j] |= matrix[i-2][j]
-                if ((p[i-2]==s[i-1] || p[i-2]==".") && ) 
-                    matrix[i][j] |= matrix[i-2][j]
-            }else{
-                matrix[i][j] = (p[i-1]==s[j-1] or p[i-1] == ".")
+    for i:=0; i<=m;i++{
+        for j:=1; j<=n;j++{
+            if (p[j-1]=='*'){
+                matrix[i][j] =matrix[i][j] || matrix[i][j-2]
+                if ((i>0)&&((p[j-2]==s[i-1] || p[j-2]=='.'))) {
+                    matrix[i][j] = matrix[i][j]||matrix[i-1][j]
+                }
+            }else if ((i>0)&&((p[j-1]==s[i-1]) || (p[j-1] == '.'))){
+                matrix[i][j] = matrix[i][j] ||                      matrix[i-1][j-1]
             }
         }
     }
 
     return matrix[m][n]
+
 }
-
-// func main() {
-
-    
-// }
