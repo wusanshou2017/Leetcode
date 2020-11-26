@@ -11,13 +11,15 @@ class Solution:
                 ans = max((right - left) * nums[right], ans)
                 right -= 1
 
-            elif nums[left] < nums[right]:
+            else:
                 ans = max((right - left) * nums[left], ans)
                 left += 1
+
+
 
         return ans
 
 
 so = Solution()
 
-print(so.solve_most([8, 8, 8, 8, 8]))
+print(so.solve_most([1,1,1,1]))
