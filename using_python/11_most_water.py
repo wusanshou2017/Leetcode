@@ -15,11 +15,9 @@ class Solution:
                 ans = max((right - left) * nums[left], ans)
                 left += 1
 
-
-
         return ans
 
 
 so = Solution()
 
-print(so.solve_most([1,1,1,1]))
+print(so.solve_most([1, 1, 1, 1]))
