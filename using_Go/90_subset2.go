@@ -15,8 +15,7 @@ func subsetsWithDup(nums []int) [][]int {
     return res 
 }
 
-func dfs (start int, end int, nums []int, path *[]int, res *[][]int ) {
-        
+func dfs (start int, end int, nums []int, path *[]int, res *[][]int ) {        
         for i:=start;i<end;i+=1{
             if (i>start && nums[i]==nums[i-1]){
                 continue
