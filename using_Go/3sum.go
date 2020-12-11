@@ -14,8 +14,13 @@ import (
 //
 //dic_for_sum
 //scoreMap := make(map[string]int, 8)
-func cantains() {
-    
+func cantains(nums[] int,t int ) bool{
+    for _, v:= range nums{
+        if (t==v){
+            return true
+        }
+    }
+    return false
 }
 
 func three_sum(nums[] int,target int) int{
@@ -35,6 +40,12 @@ func three_sum(nums[] int,target int) int{
          _, flag := dic_sum_index[target-nums[i]]
          if (flag){
             temp_arr:= dic_sum_index[target-nums[i]]
+            for _, v := range temp_arr{
+                if (i==v){
+                    break
+                }
+
+            }
 
 
          }
