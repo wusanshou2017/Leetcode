@@ -14,7 +14,7 @@ import (
 //
 //dic_for_sum
 //scoreMap := make(map[string]int, 8)
-func cantains(nums[] int,t int ) bool{
+func contains(nums[] int,t int ) bool{
     for _, v:= range nums{
         if (t==v){
             return true
@@ -23,7 +23,7 @@ func cantains(nums[] int,t int ) bool{
     return false
 }
 
-func three_sum(nums[] int,target int) int{
+func three_sum(nums[] int) [][]int{
     sort.Ints(nums)
     var res[][] int
     dic_sum_index := make(map[int] []int,0)
@@ -37,25 +37,17 @@ func three_sum(nums[] int,target int) int{
     }
     
     for i:=0;i<n;i++{
-         _, flag := dic_sum_index[target-nums[i]]
+         _, flag := dic_sum_index[-nums[i]]
          if (flag){
-            temp_arr:= dic_sum_index[target-nums[i]]
-            for _, v := range temp_arr{
-                if (i==v){
-                    break
-                }
-
+            temp_arr:= dic_sum_index[-nums[i]]
+            if !(contains(temp_arr,i)){
+                temp_arr = append(temp_arr,i)
+                res=append(res,temp_arr)
             }
-
-
-         }
-
-
+        }
     }
     
-    
-
-
+    return res 
 }
 
 func main() {
