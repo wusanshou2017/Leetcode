@@ -1,4 +1,5 @@
 class Solution():
+    # 不做贪心 就会超时
     def findIncreaseNum(self, num: int) -> int:
         temp_str = str(num)
         n = len(temp_str)
@@ -28,10 +29,26 @@ class Solution():
                 break
         return temp_num
 
+    def monotoneIncreasingDigits(self, N: int) -> int:
+        list_n = list(str(N))
+        r = len(list_n) - 1
+        res = []
+        while r - 1 >= 0:
+            if list_n[r] >= list_n[r - 1]:
+                res.append(list_n[r])
+            else:
+                list_n[r - 1] = str(int(list_n[r - 1]) - 1)
+                res = ['9'] * (len(res) + 1)
+            r -= 1
+        if list_n[r] != '0':
+            res.append(list_n[r])
+        return int(''.join(res[::-1]))
+
+
 def unit_test():
 
     so = Solution()
-    print(so.findIncreaseNum(99999999))
+    print(so.monotoneIncreasingDigits(332))
 
 
 unit_test()
