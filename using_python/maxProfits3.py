@@ -53,6 +53,15 @@ class Solution():
 
         return dp[n - 1]
 
+    def uniform_the prices(self,nums:[int],fee:int)->int :
+        n  =len(nums)
+        dp = [ [0] * n for _ in range(n)]
+
+        
+        dp[0][0] =0
+
+
+
 # unit_test
 #
 # [1,3,7,5,10,3]
