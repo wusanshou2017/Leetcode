@@ -30,3 +30,4 @@ func partition(head *ListNode, x int) *ListNode {
     dummy1.Next = dummy2_head.Next
     return dummy1_head.Next
 }
+
