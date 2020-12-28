@@ -5,55 +5,70 @@ import threading
 # 请设计修改程序，以确保 "foobar" 被输出 n 次。
 
 
-def printFoo():
+s1 = threading.Semaphore(1)
+s2 = threading.Semaphore(0)
 
-    print("foo")
+
+def printFoo():
+    for _ in range(10):
+        s1.acquire()
+        print("foo")
+        s2.release()
 
 
 def printBar():
-    print("bar")
-
-
-s1 = threading.Semaphore(1)
-s2 = threading.Semaphore(0)
+    for _ in range(10):
+        s2.acquire()
+        print("bar")
+        s1.release()
 
 
 class FooBar:
     def __init__(self, n):
         self.n = n
-        # self.s1 = threading.Semaphore(1)
-        # self.s2 = threading.Semaphore(0)
+        self.s1 = threading.Semaphore(1)
+        self.s2 = threading.Semaphore(0)
 
-    def foo(self, printFoo: 'Callable[[], None]') -> None:
+    def foo(self) -> None:
 
         for i in range(self.n):
 
             # printFoo() outputs "foo". Do not change or remove this line.
-            # self.s1.acquire()
-            s1.acquire()
-            printFoo()
-            s2.release()
-            # self.s2.release()
+            self.s1.acquire()
+            # s1.acquire()
+            self.printFoo()
+            # s2.release()
+            self.s2.release()
 
-    def bar(self, printBar: 'Callable[[], None]') -> None:
+    def bar(self) -> None:
 
         for i in range(self.n):
 
             # printBar() outputs "bar". Do not change or remove this line.
-            # self.s2.acquire()
-            s2.acquire()
-            printBar()
-            s1.release()
-            # self.s1.release()
+            self.s2.acquire()
+            # s2.acquire()
+            self.printBar()
+            # s1.release()
+            self.s1.release()
+
+    def printFoo(self):
+        print("foo")
+
+    def printBar(self):
+        print("bar")
 
 
 if __name__ == '__main__':
 
     foobar = FooBar(10)
-    t1 = threading.Thread(target=foobar.foo(printFoo))
-    t2 = threading.Thread(target=foobar.bar(printBar))
+    # t1 = threading.Thread(target=foobar.foo(printFoo))
+    # t2 = threading.Thread(target=foobar.bar(printBar))
+    t1 = threading.Thread(target=foobar.foo)
+    t2 = threading.Thread(target=foobar.bar)
     t1.start()
     t2.start()
+    t1.join()
+    t2.join()
     print("exit main")
 
 # unit_test
