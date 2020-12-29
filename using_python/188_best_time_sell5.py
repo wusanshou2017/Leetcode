@@ -6,13 +6,13 @@
 class Solution:
     def maxProfit(self, k: int, prices: List[int]) -> int:
         n = len(prices)
-        dp = [ [0] * n for _ in range (n)]
-        for i in range (n-1):
-            for j in range (i+1,n):
-                dp[i][j] = max(prices[j]-prices[i]+dp[i])
-                if dp[i][j]>0:
+        dp = [[0] * n for _ in range(n)]
+        for i in range(n - 1):
+            for j in range(i + 1, n):
+                dp[i][j] = max(prices[j] - prices[i] + dp[i][])
+                if dp[i][j] > 0:
                     pass
                 else:
                     pass
-                    
+
         return dp[n][n]
