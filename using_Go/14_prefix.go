@@ -1,28 +1,38 @@
 package main
 import "fmt"
 
-type ListNode struct {
-    Val int
-    Next *ListNode
+func getmin(strs[] string) string{
+    var minIndex int
+    temp_len := len(strs[0])
+    for index, s:=range(strs){
+        if len(s)<temp_len{
+            minIndex = index
+        }
+    }
+    return strs[minIndex]
 }
 
-func hasCycle(head *ListNode,x int) bool {
-    dummy1 :=  &ListNode{}
-    dummy2 := &ListNode{}
-    head1 :=dummy1
-    head2 := dummy2
-    for head1!=nil && head2!=nil{
-        if head1.val!= head2.val{
-            head1 =head1.Next
-            head2 = head2.Next.Next
-        }else{
-            return true
+func longestCommonPrefix(strs[]string ) string{
+    if len(strs)==0{
+        return ""
+    }
+    if len(strs)==1{
+        return strs[0]
+    }
+    min_str := getmin(strs)
+    for index, c:=  range min_str{
+        for _,s:=range strs{
+            if s[index]!=byte(c){
+                return min_str[:index]
+            }
         }
-    } 
-    return false
-    
+    }
+    return min_str
 }
+
+//  unit_test
 func main() {
+    var test =[]string {"","app","apple"}
     
-    
+    fmt.Println(longestCommonPrefix(test))
 }
