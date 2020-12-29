@@ -6,43 +6,34 @@ import (
 )
  
 //  to do get the target=0 which sum is   
-func xsum(nums []int){
+func threeSum(nums []int)[][]int{
+     n:=len(nums)
      sort.Ints(nums)
-     res:= make([]int,8)
-     if len(nums)<3 || nums[0]>0 || nums[len(nums)-1]<0{
-        empty := make([]int,0,0)
-        return empty
-     }
-     n := len(nums)
-     dicSum:=make(map[[]int]int ,8)
-     for i:=0;i<n;i++{
-         for j:= i+1;j<n;j++{
-            temp_key := make{i,j}
-            dicSum[temp_key]= nums[i] + nums[j]            
-         }
-     }
-     for idx,num:= range(nums){
-        for k,v:=range(dicSum){
-            if v ==-num{
-                temp_index:= make{}
-                temp_flag:=true
-                for _,val:=range(k) {
-                    if val==idx{
-                        temp_flag=false                
-                    }
-                    temp_index=append(temp_index, val)
-                }
-                if temp_flag{
-                    temp_index=append( temp_index,idx)
-                    sort.Ints(temp_index)
-                    res=append(res,temp_index)
-                }
-
+     res:= make([][]int,0)
+     for first:= 0;first<n;first++{
+        if first>0 && nums[first] ==nums[first-1]{
+            continue
+        }
+        third :=n-1
+        target:=  0- nums[first]
+        for second:= first+1;second<n;second++{
+            if second>first+1 && nums[second]==nums[second-1]{
+                continue
+            }
+            for second<third &&nums[second]+nums[third]>target{
+                third--
+            }
+            if second ==third{
+                break
+            }
+            if nums[second]+nums[third] == target{
+                ans = append(ans,[]int {nums[first],nums[second],nums[third]})
             }
         }
-     }
+     }        
      return res
 }
+
 
 
 //  unit_test
