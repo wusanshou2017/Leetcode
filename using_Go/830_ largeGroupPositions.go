@@ -1,20 +1,24 @@
-// 在一个由小写字母构成的字符串 s 中，包含由一些连续的相同字符所构成的分组。
-
-// 例如，在字符串 s = "abbxxxxzyy" 中，就含有 "a", "bb", "xxxx", "z" 和 "yy" 这样的一些分组。
-
-// 分组可以用区间 [start, end] 表示，其中 start 和 end 分别表示该分组的起始和终止位置的下标。上例中的 "xxxx" 分组用区间表示为 [3,6] 。
-
-// 我们称所有包含大于或等于三个连续字符的分组为 较大分组 。
-
-// 找到每一个 较大分组 的区间，按起始位置下标递增顺序排序后，返回结果。
-
 package main
+import (
+    "fmt"
+)
 
-func largeGroupPositions (){
 
-
-}
-
-func main() {
-    
+func largeGroupPositions (s[] string) [][]int{
+    res:=make([]int,0)
+    slow_ptr :=0
+    fast_ptr :=0 
+    n:= len(s)
+    for slow_ptr<n{
+        for fast_ptr<n && s[fast_ptr]==s[slow_ptr]{
+            fast_ptr++
+        }
+        if (fast_ptr-slow_ptr)>2{        
+            res =append(res, []int{slow_ptr,fast_ptr-1})
+            slow_ptr =fast_ptr
+        }else{
+            slow_ptr++
+        }
+    }
+    return res
 }
