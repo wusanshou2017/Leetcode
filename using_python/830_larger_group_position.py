@@ -16,13 +16,6 @@ from typing import List
 # 解释：较大分组为 "ddd", "eeee" 和 "bbb"
 
 
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
-
-
 def FindPosition(s: str) -> [[int]]:
     n = len(s)
     res = []

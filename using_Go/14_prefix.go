@@ -32,7 +32,8 @@ func longestCommonPrefix(strs[]string ) string{
 
 //  unit_test
 func main() {
-    var test =[]string {"","app","apple"}
+    var test =[]string {"appp","app","apple"}
     
     fmt.Println(longestCommonPrefix(test))
+    
 }
