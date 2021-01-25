@@ -20,4 +20,3 @@ class Solution:
 so = Solution()
 
 print(so.maximumProduct([-100, -98, -1, 2, 3, 4]))
-
