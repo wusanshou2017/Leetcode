@@ -8,8 +8,6 @@ type ListNode struct {
     Next *ListNode
 }
 
-
-
 func partition(head *ListNode, x int) *ListNode {
     dummy1 :=&ListNode{}
     dummy2 :=&ListNode{}
