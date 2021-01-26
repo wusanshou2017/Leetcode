@@ -22,14 +22,20 @@ class Solution:
 
     #  to parse the pattern and decrease the  complexsity of time
     def numEquivDominoPairs2(self, dominoes: List[List[int]]) -> int:
-        pass
-        return 0
+        num = [0] * 100
+        ret = 0
+        for x, y in dominoes:
+            val = (x * 10 + y if x <= y else y * 10 + x)
+            ret += num[val]
+            num[val] += 1
+        return ret
 
 
 so = Solution()
 
 
-print(so.numEquivDominoPairs([[1, 1], [2, 2], [1, 1], [1, 2], [1, 2], [1, 1]]))
+print(so.numEquivDominoPairs2(
+    [[1, 1], [2, 2], [1, 1], [1, 2], [1, 2], [1, 1]]))
 
 
 s = "Adname"
