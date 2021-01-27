@@ -40,16 +40,9 @@ func myAtoi(s string) int {
     dfa["signed"] = []string{"end","end","in_num","end"}
     dfa["in_num"] = []string{"end","end","in_num","end"}
     dfa["end"] = []string{"end","end","end","end"}
-    nums_table["1"]=1
-    nums_table["2"]=2
-    nums_table["3"]=3
-    nums_table["4"]=4
-    nums_table["5"]=5
-    nums_table["6"]=6
-    nums_table["7"]=7
-    nums_table["8"]=8
-    nums_table["9"]=9
-    nums_table["0"]=0
+    for i := 0; i < 10; i++ {
+        nums_table[string(i)] = i
+    }
     state="start"
     ans =0
     sign =1
@@ -63,11 +56,7 @@ func myAtoi(s string) int {
     return sign*ans
 }
 
-// test_case 
-// "  +45646 wsdff"
-// "weee 45456"
-// "fff  444"
 func main() {
-    res:= myAtoi("   -4df4 somebad")
+    res:= myAtoi("   123")
     fmt.Println(res)
 }
