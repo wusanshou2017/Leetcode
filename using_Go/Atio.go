@@ -11,6 +11,7 @@ var ans int
 var sign int
 var INT_MAX int
 var INT_MIN int
+
 func get_col(c string)int{
     if (c==" ") {return 0}
 	if (c=="+" || c =="-") {return 1}
@@ -35,6 +36,7 @@ func get(c string){
         }
     }
 }
+
 func myAtoi(s string) int {
     dfa["start"] = []string{"start","signed","in_num","end"}
     dfa["signed"] = []string{"end","end","in_num","end"}
