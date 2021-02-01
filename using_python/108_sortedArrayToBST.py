@@ -27,6 +27,7 @@ class Solution:
             return None
         mid = (left + right) // 2
         root = TreeNode(nums[mid])
+        print("mid:...", mid)
         root.left = self.helper(left, mid - 1, nums)
         root.right = self.helper(mid + 1, right, nums)
         return root
