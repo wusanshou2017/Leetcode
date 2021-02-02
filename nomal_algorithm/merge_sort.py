@@ -1,9 +1,12 @@
 def mergesort(seq):
     if len(seq) <= 1:
         return seq
-    mid = len(seq) / 2
-    left = mergesort(seq[:mid])
-    right = mergesort(seq[mid:])
+    mid = len(seq) // 2
+
+    seq1 = seq[:mid]
+    seq2 = seq[mid:]
+    left = mergesort(seq1)
+    right = mergesort(seq2)
 
     return merge(left, right)
 
@@ -29,7 +32,8 @@ def merge(left, right):
 def unit_test():
     test = [1, 2, 3, 4, 5, 9, 7, 5, 1, 0, 4, 55, 6,
             8, 77, 558, 6654, 131, 4, 1, 32, 45, 1, 54654]
-    data=mergesort(test)
+    data = mergesort(test)
     print(data)
+
 
 unit_test()
