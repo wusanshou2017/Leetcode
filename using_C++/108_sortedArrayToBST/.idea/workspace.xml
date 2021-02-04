@@ -12,13 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01587bc6-7095-4d06-927a-5ac649a985f4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../nomal_algorithm/union_find/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../nomal_algorithm/union_find/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/108_sortedArrayToBST.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/108_sortedArrayToBST.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/108_sortedArrayToBST.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/108_sortedArrayToBST.dir/main.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/108_sortedArrayToBST.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/108_sortedArrayToBST.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../same_tree/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../same_tree/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../using_Go/100_judge_same_tree_node.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../using_Go/100_judge_same_tree_node.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../using_python/128_longestConsecutive.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../using_python/128_longestConsecutive.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

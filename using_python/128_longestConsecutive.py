@@ -3,13 +3,15 @@
 # 输入：nums = [100,4,200,1,3,2]
 # 输出：4
 # 解释：最长数字连续序列是 [1, 2, 3, 4]。它的长度为 4。
+
+
 from typing import List
 
 
 class Unionfind:
     def __init__(self, n: int):
-        self.fa =[0]*n
-        self.rank =[0]* n
+        self.fa = [0] * n
+        self.rank = [0] * n
 
         for i in range(n):
             self.fa[i] = n
