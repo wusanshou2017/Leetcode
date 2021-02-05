@@ -12,7 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01587bc6-7095-4d06-927a-5ac649a985f4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../using_python/128_longestConsecutive.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../using_python/128_longestConsecutive.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../nomal_algorithm/union_find/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../nomal_algorithm/union_find/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,7 +35,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
+            <state relative-caret-position="-48">
               <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -162,7 +162,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
+        <state relative-caret-position="-48">
           <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
