@@ -33,7 +33,7 @@ func copyRandomList(head *Node) *Node{
     newNode := getCloneNode( visitedMap,oldNode)
     newHead := newNode
     for oldNode != nil{
-        newNode.Next =getCloneNode(visitedMap, oldNode.Next)
+        newNode.Next = getCloneNode(visitedMap, oldNode.Next)
         newNode.Random = getCloneNode(visitedMap, oldNode.Random)
         oldNode = oldNode.Next
         newNode = newNode.Next
@@ -62,10 +62,9 @@ func main() {
         temp1 =temp1.Next
     }
     
-    temp2:=res 
+    temp2 := res 
     for temp2!=nil{
         fmt.Println("random 域:...",temp2.Val)
         temp2=temp2.Random
     }
-
 }

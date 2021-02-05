@@ -12,7 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01587bc6-7095-4d06-927a-5ac649a985f4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../nomal_algorithm/union_find/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../nomal_algorithm/union_find/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../using_Go/138_randomNodecopy.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../using_Go/138_randomNodecopy.go" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -128,7 +128,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="494" y="146" width="1400" height="849" extended-state="1" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18086697" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
