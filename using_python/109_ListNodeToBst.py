@@ -22,4 +22,4 @@ class Solution(object):
         slow = head
         fast = head
         #  find the mid node in the ListNode
-        while （）
+        while
