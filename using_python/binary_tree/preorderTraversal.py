@@ -38,3 +38,5 @@ class Solution:
 
                 if root.left is not None:
                     stack.append(root.left)
+
+    

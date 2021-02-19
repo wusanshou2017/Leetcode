@@ -13,10 +13,12 @@ class Solution:
     def reverse(self, head: ListNode):
         if not head or not head.next:
             return head
-        pre = ListNode()
-        pre.next = head
+        pre = head
+        cur = head.next
 
-        while pre and pre.next:
-            tmp = pre.next
-            pre.next.next = pre
-            pre = temp
+        while cur:
+            tmp = cur.next
+            cur.next= pre
+            pre =cur
+            cur =temp 
+        return pre 
