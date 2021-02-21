@@ -58,10 +58,11 @@ class Solution:
             if A[fast] or k:
                 if A[fast] == 0:
                     k -= 1
-
+                print("k...:", k)
                 fast += 1
 
             else:
+                print("fast_step:...", fast)
                 if A[slow] == 0:
                     fast += 1
                 slow += 1
@@ -75,4 +76,3 @@ K = 2
 so = Solution()
 
 print(so.longestOnes(test_data, K))
-
