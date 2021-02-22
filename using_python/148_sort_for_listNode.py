@@ -5,6 +5,7 @@ class ListNode:
         self.next = next
 
 
+
 class Solution:
     def sortList(self, head: ListNode) -> ListNode:
         if not head.next:
