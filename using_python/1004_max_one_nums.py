@@ -60,13 +60,14 @@ class Solution:
                     k -= 1
                 fast += 1
 
-            else:                
+            else:
                 if A[slow] == 0:
                     fast += 1
                 slow += 1
 
             res = max(res, fast - slow)
         return res
+
 
 test_data = [1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0]
 
