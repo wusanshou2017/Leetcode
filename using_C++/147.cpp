@@ -1,8 +1,10 @@
 class ListNode{
+
 public:
     ListNode(int value):val(value){}
     int val;
     ListNode * next =nullptr;
+
 }
 
 #define min_num -65535
@@ -32,3 +34,18 @@ public:
         head2.val =temp 
     }
 };
+/*
+#include<string>
+using namespace std;
+class  Solution{
+public:
+    int minCut(string s){
+        if (s==)
+
+
+
+
+
+    }
+
+}*/
