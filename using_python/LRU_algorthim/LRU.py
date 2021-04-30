@@ -18,6 +18,3 @@ class LRUCache:
 
         if key in self.dic:
             del self.dic[key]
-
-
-print(eval("5 * 6"))
