@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/lc/7_reverse_int/main.cpp
+iostream
+-
+sstream
+-
+algorithm
+-
+string
+-
+vector
+-
+

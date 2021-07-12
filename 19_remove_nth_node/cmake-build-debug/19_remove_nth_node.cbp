@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="19_remove_nth_node"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="E:/lc/19_remove_nth_node/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/bin/mingw32-make.exe -f &quot;E:/lc/19_remove_nth_node/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/bin/mingw32-make.exe -f &quot;E:/lc/19_remove_nth_node/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/bin/mingw32-make.exe -f &quot;E:/lc/19_remove_nth_node/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/bin/mingw32-make.exe -f &quot;E:/lc/19_remove_nth_node/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="19_remove_nth_node">
+				<Option output="E:/lc/19_remove_nth_node/cmake-build-debug/19_remove_nth_node.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/lc/19_remove_nth_node/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="d:\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
+					<Add directory="d:\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
+					<Add directory="d:\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
+					<Add directory="d:\bin\../lib/gcc/mingw32/8.2.0/include"/>
+					<Add directory="d:\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
+					<Add directory="d:\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/bin/mingw32-make.exe -f &quot;E:/lc/19_remove_nth_node/cmake-build-debug/Makefile&quot;  VERBOSE=1 19_remove_nth_node"/>
+					<CompileFile command="D:/bin/mingw32-make.exe -f &quot;E:/lc/19_remove_nth_node/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/bin/mingw32-make.exe -f &quot;E:/lc/19_remove_nth_node/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/bin/mingw32-make.exe -f &quot;E:/lc/19_remove_nth_node/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="19_remove_nth_node/fast">
+				<Option output="E:/lc/19_remove_nth_node/cmake-build-debug/19_remove_nth_node.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/lc/19_remove_nth_node/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="d:\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
+					<Add directory="d:\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
+					<Add directory="d:\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
+					<Add directory="d:\bin\../lib/gcc/mingw32/8.2.0/include"/>
+					<Add directory="d:\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
+					<Add directory="d:\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/bin/mingw32-make.exe -f &quot;E:/lc/19_remove_nth_node/cmake-build-debug/Makefile&quot;  VERBOSE=1 19_remove_nth_node/fast"/>
+					<CompileFile command="D:/bin/mingw32-make.exe -f &quot;E:/lc/19_remove_nth_node/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/bin/mingw32-make.exe -f &quot;E:/lc/19_remove_nth_node/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/bin/mingw32-make.exe -f &quot;E:/lc/19_remove_nth_node/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="E:/lc/19_remove_nth_node/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/bin/mingw32-make.exe -f &quot;E:/lc/19_remove_nth_node/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/bin/mingw32-make.exe -f &quot;E:/lc/19_remove_nth_node/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/bin/mingw32-make.exe -f &quot;E:/lc/19_remove_nth_node/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/bin/mingw32-make.exe -f &quot;E:/lc/19_remove_nth_node/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="E:/lc/19_remove_nth_node/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/bin/mingw32-make.exe -f &quot;E:/lc/19_remove_nth_node/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/bin/mingw32-make.exe -f &quot;E:/lc/19_remove_nth_node/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/bin/mingw32-make.exe -f &quot;E:/lc/19_remove_nth_node/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/bin/mingw32-make.exe -f &quot;E:/lc/19_remove_nth_node/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="E:/lc/19_remove_nth_node/main.cpp">
+			<Option target="19_remove_nth_node"/>
+		</Unit>
+		<Unit filename="E:/lc/19_remove_nth_node/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
