@@ -11,7 +11,6 @@ class TreeNode:
 class Solution:
     def Traversal(self, root: TreeNode) -> List[int]:
         # 递归解法
-
         if root is None:
             return []
 
@@ -29,3 +28,15 @@ class Solution:
             res.append (cur.val)
             cur = cur.right
         return res
+
+    def Traversal3 (self,root:TreeNode)->List[int]:
+        res =[]
+        stack =[]
+        cur =root 
+
+        
+
+        
+
+
+

@@ -15,8 +15,17 @@
 # 输入：A = [2,-1,2], K = 3
 # 输出：3
 
-
 class Solution:
-    def shortestSubarray(self, A: List[int], K: int) -> int:
-        
+    def shortestSubarray(self, A: [int], K: int) -> int:
+        pass
 
+
+class NerInfer:
+    def __init__(self, name: str):
+        print(name)
+
+# ner = NerInfer("test input ")
+
+
+globals()["NerInfer"]("demo")
+confidence_threshold
