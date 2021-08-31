@@ -33,3 +33,22 @@ k = 1
 so =Solution()
 
 print(so.findCheapestPrice2(3,edges,src,dst,k))
+
+
+
+def mlm_loss(inputs):
+    y_true, y_pred, mask = inputs # [token_ids, proba, is_masked]
+    loss = K.sparse_categorical_crossentropy(
+        y_true, y_pred, from_logits=True
+    )
+    loss = K.sum(loss * mask) / (K.sum(mask) + K.epsilon())
+    return loss
+    
+def mlm_acc(inputs):
+    y_true, y_pred, mask = inputs
+    y_true = K.cast(y_true, floatx)
+    acc = keras.metrics.sparse_categorical_accuracy(y_true, y_pred)
+    acc = K.sum(acc * mask) / (K.sum(mask) + K.epsilon())
+    return acc
+mlm_loss = Lambda(mlm_loss, name='mlm_loss')([token_ids, proba, is_masked]) # mlm
+mlm_acc = Lambda(mlm_acc, name='mlm_acc')([token_ids, proba, is_masked])
